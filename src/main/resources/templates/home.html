@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<section class="py-5" th:fragment="home">
+    <div class="container px-5">
+        <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+            <div class="text-center">
+                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-code-slash"></i></div>
+
+                <h1 class="display-3 fw-bolder mb-3">
+                    <span class="text-gradient d-inline">MD. SAKIB UDDIN</span>
+                </h1>
+                <h2 class="display-6 fw-bold mb-3">
+                    Competitive Programmer | Web Developer
+                </h2>
+
+                <p class="lead fw-normal text-muted mb-4">
+                    A Competitive Programmer and  Web Developer focused on the Spring ecosystem, backed by extensive experience in Competitive Programming (Solved 3000+ problems, 3 times ICPC Dhaka Regionalist). Let's build robust solutions.
+                </p>
+
+                <div class="d-grid gap-3 d-sm-flex justify-content-center mb-4">
+                    <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/assets/resume.pdf}" download="Md_Sakib_Uddin_Resume.pdf">
+                        <i class="bi bi-download me-2"></i> Download Resume
+                    </a>
+                    <a class="btn btn-outline-primary btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="d-flex justify-content-center fs-2 gap-4">
+                    <a class="text-gradient" href="https://linkedin.com/in/YOUR_PROFILE"><i class="bi bi-linkedin"></i></a>
+                    <a class="text-gradient" href="https://github.com/YOUR_PROFILE"><i class="bi bi-github"></i></a>
+                    <a class="text-gradient" href="#!"><i class="bi bi-envelope"></i></a> </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

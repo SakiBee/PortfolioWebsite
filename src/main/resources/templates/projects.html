@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="projects">
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">BeeShop E-commerce Platform</h2>
+                                    <p>
+                                        A full-featured e-commerce platform demonstrating advanced Spring Boot capabilities. Key features include Spring Security for Role-based Authorization, user profile management, and an Admin Panel with full CRUD operations for products and categories.
+                                    </p>
+                                    <p class="small text-muted mt-3">
+                                        Technology Used: Spring Boot, Thymeleaf, Bootstrap, HTML, CSS, Spring Data JPA with Hibernate, MySQL, Git.
+                                    </p>
+                                </div>
+                                <img class="img-fluid" th:src="@{https://dummyimage.com/300x400/00796B/fff}" alt="BeeShop Project Image" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card overflow-hidden shadow rounded-4 border-0">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">TextTalk Blog Website</h2>
+                                    <p>
+                                        A dynamic blog website featuring full authentication, profile management with CRUD operations, and role-based authorization. It includes an Admin Panel and enabled search and filtering functionality with a responsive UI design.
+                                    </p>
+                                    <p class="small text-muted mt-3">
+                                        Technology Used: EJS, HTML, CSS, Node.js, MongoDB, Session.
+                                    </p>
+                                </div>
+                                <img class="img-fluid" th:src="@{https://dummyimage.com/300x400/00BCD4/000}" alt="TextTalk Project Image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">Contact me</a>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

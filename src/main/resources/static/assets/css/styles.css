@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------------------- */
+/* --- MODIFIED BOOTSTRAP VARIABLES (TEAL/CYAN SCHEME) --- */
+/* -------------------------------------------------------------------------- */
+:root {
+  /* Standard Colors */
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray-900: #212529;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray: #6c757d;
+
+  /* Primary: Dark Teal, Secondary: Bright Cyan */
+  --bs-primary: #00796B; /* Dark Teal */
+  --bs-primary-rgb: 0, 121, 107;
+  --bs-secondary: #00BCD4; /* Bright Cyan */
+  --bs-secondary-rgb: 0, 188, 212;
+
+  /* Gradient for accents */
+  --bs-gradient-primary-to-secondary: linear-gradient(135deg, var(--bs-primary), var(--bs-secondary)) !important;
+
+  /* Links and Body */
+  --bs-link-color: var(--bs-primary);
+  --bs-link-hover-color: #004D40;
+  --bs-body-color: var(--bs-gray-900);
+  --bs-body-bg: var(--bs-white);
+
+  /* Typography */
+  --bs-font-sans-serif: "Plus Jakarta Sans", sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-headings-font-family: var(--bs-font-sans-serif);
+}
+
+/* -------------------------------------------------------------------------- */
+/* --- CORE STYLING (REQUIRED FOR STRUCTURE) --- */
+/* -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* --- Utility Classes based on the theme --- */
+.bg-gradient-primary-to-secondary {
+  background: var(--bs-gradient-primary-to-secondary);
+}
+
+.text-gradient {
+  background: var(--bs-gradient-primary-to-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Button Styling --- */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #004D40; /* Darker Teal */
+  --bs-btn-hover-border-color: #004D40;
+}
+
+/* --- Card, Feature, and Icon Styling --- */
+.card-body {
+    padding: 1.5rem;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.5rem;
+}
+
+/* --- Resume Styling --- */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
