@@ -35,6 +35,12 @@ public class HomeController {
         return "master";
     }
 
+    @GetMapping("/events")
+    public String events(Model model) {
+        setPageTitle(model, "Memorable Events");
+        return "master"; // Returns master.html which includes events.html
+    }
+
     @GetMapping("/contact")
     public String contact(Model model) {
         setPageTitle(model, "Contact");

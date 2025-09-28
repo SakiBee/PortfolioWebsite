@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<section class="py-5" th:fragment="events">
+    <div class="container px-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Memorable Events</span></h1>
+            <p class="lead fw-normal text-muted mb-0">Highlights from my competitive, professional, and academic journey.</p>
+        </div>
+
+        <!-- Events Grid -->
+        <!-- 3 columns on large screens (col-lg-4), 2 on medium (col-md-6), 1 on small (col-12) -->
+        <div class="row gx-5 gy-4 justify-content-center">
+
+            <!-- Event Card 1: ICPC Regional -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-sm border-0">
+                    <img th:src="@{https://placehold.co/600x400/00796B/ffffff?text=ICPC+Contest}"
+                         class="card-img-top" alt="ICPC Programming Contest" style="object-fit: cover; height: 180px;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-primary fw-bolder mb-2">Dec 2024</span>
+                        <h5 class="card-title fw-bolder">ICPC Dhaka Regional Contest</h5>
+                        <p class="card-text small text-muted">
+                            Qualified for the third time and achieved a competitive rank (Standing 68) among top university teams. An intense display of algorithmic skills.
+                        </p>
+                        <a href="#!" class="text-decoration-none small fw-bolder text-primary">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2: Industrial Attachment Completion -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-sm border-0">
+                    <img th:src="@{https://placehold.co/600x400/00BCD4/000000?text=Internship+Completion}"
+                         class="card-img-top" alt="Internship Completion" style="object-fit: cover; height: 180px;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-secondary fw-bolder mb-2">June 2024</span>
+                        <h5 class="card-title fw-bolder">Software Development Internship</h5>
+                        <p class="card-text small text-muted">
+                            Successfully concluded industrial attachment at Celloscope Limited, focusing on **Spring Boot backend development** and REST API implementation.
+                        </p>
+                        <a href="#!" class="text-decoration-none small fw-bolder text-secondary">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3: Thesis Presentation -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-sm border-0">
+                    <img th:src="@{https://placehold.co/600x400/343a40/ffffff?text=Thesis+Defense}"
+                         class="card-img-top" alt="Thesis Presentation" style="object-fit: cover; height: 180px;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-dark fw-bolder mb-2">May 2025</span>
+                        <h5 class="card-title fw-bolder">Undergraduate Thesis Defense</h5>
+                        <p class="card-text small text-muted">
+                            Presented and submitted the thesis on **Pneumonia Detection using Vision Transformers**, demonstrating expertise in Deep Learning.
+                        </p>
+                        <a href="#!" class="text-decoration-none small fw-bolder text-dark">View Research &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 4: Codeforces Specialist Achievement (Example 4 for 3x2 grid display) -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-sm border-0">
+                    <img th:src="@{https://placehold.co/600x400/FFC107/000000?text=Codeforces+Specialist}"
+                         class="card-img-top" alt="Codeforces Achievement" style="object-fit: cover; height: 180px;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-warning text-dark fw-bolder mb-2">2023</span>
+                        <h5 class="card-title fw-bolder">Codeforces Specialist Rank</h5>
+                        <p class="card-text small text-muted">
+                            Achieved "Specialist" status on Codeforces with a peak rating of 1420, reflecting consistent algorithmic practice and success.
+                        </p>
+                        <a href="#!" class="text-decoration-none small fw-bolder text-warning">View Profile &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 5: RMSTU Champion (Example 5) -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-sm border-0">
+                    <img th:src="@{https://placehold.co/600x400/e21e80/ffffff?text=RMSTU+Champion}"
+                         class="card-img-top" alt="University Contest Winner" style="object-fit: cover; height: 180px;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-danger fw-bolder mb-2">2022</span>
+                        <h5 class="card-title fw-bolder">Two-time University Champion</h5>
+                        <p class="card-text small text-muted">
+                            Secured first place twice in the RMSTU Intra University Programming Contest, demonstrating local dominance.
+                        </p>
+                        <a href="#!" class="text-decoration-none small fw-bolder text-danger">See Trophy &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 6: CUET Tech Carnival (Example 6) -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card h-100 shadow-sm border-0">
+                    <img th:src="@{https://placehold.co/600x400/6f42c1/ffffff?text=CUET+Carnival}"
+                         class="card-img-top" alt="CUET Competition" style="object-fit: cover; height: 180px;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-info text-white fw-bolder mb-2">2022</span>
+                        <h5 class="card-title fw-bolder">CUET Tech Carnival Standing 21</h5>
+                        <p class="card-text small text-muted">
+                            A strong finish (Standing 21) in the CUET Tech Carnival 1.0 programming contest against national competition.
+                        </p>
+                        <a href="#!" class="text-decoration-none small fw-bolder text-info">View Ranking &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="lead text-muted"></p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

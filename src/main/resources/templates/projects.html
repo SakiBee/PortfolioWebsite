@@ -2,139 +2,151 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <body>
 <div th:fragment="projects">
+    <!-- Projects Section-->
     <section class="py-5">
         <div class="container px-5 mb-5">
             <div class="text-center mb-5">
                 <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                <p class="lead fw-normal text-muted mb-0">Full-stack applications demonstrating technical expertise.</p>
             </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
 
-                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                        <div class="card-body p-0">
-                            <div class="d-flex align-items-center">
-                                <div class="p-5">
-                                    <h2 class="fw-bolder">BeeShop E-commerce Platform</h2>
-                                    <p>
-                                        A full-featured e-commerce platform demonstrating advanced Spring Boot capabilities. Key features include Spring Security for Role-based Authorization, user profile management, and an Admin Panel with full CRUD operations for products and categories.
-                                    </p>
-                                    <p class="small text-muted mt-3">
-                                        Technology Used: Spring Boot, Thymeleaf, Bootstrap, HTML, CSS, Spring Data JPA with Hibernate, MySQL, Git.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a class="btn btn-primary me-3" href="https://github.com/SakiBee/BeeShop-Ecom-App" target="_blank">
-                                            <i class="bi bi-box-arrow-up-right me-1"></i> View Live Demo
-                                        </a>
-                                        <a class="btn btn-outline-dark" href="https://github.com/SakiBee/BeeShop-Ecom-App" target="_blank">
-                                            <i class="bi bi-github me-1"></i> GitHub Repo
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" th:src="@{https://dummyimage.com/300x400/00796B/fff}" alt="BeeShop Project Image" />
-                            </div>
+            <!-- Projects Grid Container -->
+            <!-- 2 columns on medium/large screens (col-md-6), 1 column on small screens (col-12) -->
+            <div class="row gx-5 gy-4 justify-content-center">
+
+                <!-- Project Card 1: BeeShop E-commerce Platform -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img th:src="@{https://dummyimage.com/600x400/00796B/fff&text=BeeShop}"
+                             class="card-img-top" alt="BeeShop Project Image" style="object-fit: cover; height: 180px;">
+                        <div class="card-body p-4">
+                            <h2 class="h5 fw-bolder">BeeShop E-commerce Platform</h2>
+                            <p class="card-text small text-muted">
+                                A full-featured e-commerce platform demonstrating advanced Spring Boot capabilities. Key features include Spring Security for **Role-based Authorization**, user profile management, and an Admin Panel with full CRUD operations.
+                            </p>
+                            <p class="card-text small fw-bolder text-primary mt-3">
+                                Technology Used: Spring Boot, Thymeleaf, Spring Data JPA, MySQL.
+                            </p>
                         </div>
-                    </div>
-
-                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                        <div class="card-body p-0">
-                            <div class="d-flex align-items-center">
-                                <div class="p-5">
-                                    <h2 class="fw-bolder">SecondHome</h2>
-                                    <p>
-                                        A comprehensive hall management platform designed for university residential halls, showcasing advanced Spring Boot capabilities. Key features include Spring Security–based authentication with role-based access control (Admin/Student), seat allocation and room management, complaint tracking, mess bill management, and a notice board for important announcements. The system also provides user profile management and an intuitive admin dashboard to oversee student records, room occupancy, and payments.
-                                    </p>
-                                    <p class="small text-muted mt-3">
-                                        Technology Used: Spring Boot, Spring Security, Thymeleaf, Bootstrap, HTML, CSS, Spring Data JPA with Hibernate, MySQL, Git.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a class="btn btn-primary me-3" href="https://github.com/SakiBee/SecondHome" target="_blank">
-                                            <i class="bi bi-box-arrow-up-right me-1"></i> View Live Demo
-                                        </a>
-                                        <a class="btn btn-outline-dark" href="https://github.com/SakiBee/SecondHome" target="_blank">
-                                            <i class="bi bi-github me-1"></i> GitHub Repo
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" th:src="@{https://dummyimage.com/300x400/00796B/fff}" alt="BeeShop Project Image" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card overflow-hidden shadow rounded-4 border-0">
-                        <div class="card-body p-0">
-                            <div class="d-flex align-items-center">
-                                <div class="p-5">
-                                    <h2 class="fw-bolder">Sakib's Forge</h2>
-                                    <p>
-                                        This portfolio is a live demonstration of my full-stack skills, built on the robust Java Spring Boot ecosystem. It features a clean, single-page layout designed for speed and maintainability. Utilizes a Master Layout to dynamically swap content (Home, Resume, Projects) using reusable fragments.
-                                    </p>
-                                    <p class="small text-muted mt-3">
-                                        Technology Used: Spring Boot, Thymeleaf, CSS, Bootstrap 5
-                                    </p>
-                                    <div class="mt-4">
-                                        <a class="btn btn-primary me-3" href="https://github.com/SakiBee/PortfolioWebsite" target="_blank">
-                                            <i class="bi bi-box-arrow-up-right me-1"></i> View Live Demo
-                                        </a>
-                                        <a class="btn btn-outline-dark" href="https://github.com/SakiBee/PortfolioWebsite" target="_blank">
-                                            <i class="bi bi-github me-1"></i> GitHub Repo
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" th:src="@{https://dummyimage.com/300x400/00BCD4/000}" alt="TextTalk Project Image" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card overflow-hidden shadow rounded-4 border-0">
-                        <div class="card-body p-0">
-                            <div class="d-flex align-items-center">
-                                <div class="p-5">
-                                    <h2 class="fw-bolder">TextTalk Blog Website</h2>
-                                    <p>
-                                        A dynamic blog website featuring full authentication, profile management with CRUD operations, and role-based authorization. It includes an Admin Panel and enabled search and filtering functionality with a responsive UI design.
-                                    </p>
-                                    <p class="small text-muted mt-3">
-                                        Technology Used: EJS, HTML, CSS, Node.js, MongoDB, Session.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a class="btn btn-primary me-3" href="https://github.com/SakiBee/TextTalk--Blog-Website" target="_blank">
-                                            <i class="bi bi-box-arrow-up-right me-1"></i> View Live Demo
-                                        </a>
-                                        <a class="btn btn-outline-dark" href="https://github.com/SakiBee/TextTalk--Blog-Website" target="_blank">
-                                            <i class="bi bi-github me-1"></i> GitHub Repo
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" th:src="@{https://dummyimage.com/300x400/00BCD4/000}" alt="TextTalk Project Image" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card overflow-hidden shadow rounded-4 border-0">
-                        <div class="card-body p-0">
-                            <div class="d-flex align-items-center">
-                                <div class="p-5">
-                                    <h2 class="fw-bolder">Income Expenses Tracker</h2>
-                                    <p>
-                                        A full-stack web application for managing personal finances with features like user authentication, account management, and transaction tracking. Users can add, update, and categorize their income and expenses, visualize financial data, and manage multiple accounts with real-time updates.
-                                    </p>
-                                    <p class="small text-muted mt-3">
-                                        Technology Used: React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Mongoose, JWT, Bcrypt.
-                                    </p>
-                                    <div class="mt-4">
-                                        <a class="btn btn-primary me-3" href="https://github.com/SakiBee/Income-Expense-Tracker" target="_blank">
-                                            <i class="bi bi-box-arrow-up-right me-1"></i> View Live Demo
-                                        </a>
-                                        <a class="btn btn-outline-dark" href="https://github.com/SakiBee/Income-Expense-Tracker" target="_blank">
-                                            <i class="bi bi-github me-1"></i> GitHub Repo
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" th:src="@{https://dummyimage.com/300x400/00BCD4/000}" alt="TextTalk Project Image" />
-                            </div>
+                        <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                            <a class="btn btn-primary btn-sm me-2 mb-2" href="https://github.com/SakiBee/BeeShop-Ecom-App" target="_blank">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                            </a>
+                            <a class="btn btn-outline-dark btn-sm mb-2" href="https://github.com/SakiBee/BeeShop-Ecom-App" target="_blank">
+                                <i class="bi bi-github me-1"></i> GitHub Repo
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project Card 2: SecondHome -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img th:src="@{https://dummyimage.com/600x400/00BCD4/000&text=SecondHome}"
+                             class="card-img-top" alt="SecondHome Project Image" style="object-fit: cover; height: 180px;">
+                        <div class="card-body p-4">
+                            <h2 class="h5 fw-bolder">SecondHome Hall Management</h2>
+                            <p class="card-text small text-muted">
+                                A comprehensive hall management platform for university residential halls featuring **Spring Security** (Admin/Student roles), seat allocation, complaint tracking, and mess bill management.
+                            </p>
+                            <p class="card-text small fw-bolder text-primary mt-3">
+                                Technology Used: Spring Boot, Spring Security, Thymeleaf, MySQL.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                            <a class="btn btn-primary btn-sm me-2 mb-2" href="https://github.com/SakiBee/SecondHome" target="_blank">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                            </a>
+                            <a class="btn btn-outline-dark btn-sm mb-2" href="https://github.com/SakiBee/SecondHome" target="_blank">
+                                <i class="bi bi-github me-1"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Sakib's Forge (Portfolio) -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img th:src="@{https://dummyimage.com/600x400/343a40/ffffff&text=Portfolio}"
+                             class="card-img-top" alt="Portfolio Project Image" style="object-fit: cover; height: 180px;">
+                        <div class="card-body p-4">
+                            <h2 class="h5 fw-bolder">Sakib's Forge Portfolio</h2>
+                            <p class="card-text small text-muted">
+                                This portfolio is a live demonstration of my full-stack skills, built on the robust **Java Spring Boot ecosystem**. Features a clean, single-page layout with dynamic content swapping using **Thymeleaf Fragments**.
+                            </p>
+                            <p class="card-text small fw-bolder text-primary mt-3">
+                                Technology Used: Spring Boot, Thymeleaf, Bootstrap 5.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                            <a class="btn btn-primary btn-sm me-2 mb-2" href="https://github.com/SakiBee/PortfolioWebsite" target="_blank">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                            </a>
+                            <a class="btn btn-outline-dark btn-sm mb-2" href="https://github.com/SakiBee/PortfolioWebsite" target="_blank">
+                                <i class="bi bi-github me-1"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: TextTalk Blog Website -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img th:src="@{https://dummyimage.com/600x400/FFC107/000000&text=TextTalk}"
+                             class="card-img-top" alt="TextTalk Project Image" style="object-fit: cover; height: 180px;">
+                        <div class="card-body p-4">
+                            <h2 class="h5 fw-bolder">TextTalk Blog Website (MERN Stack)</h2>
+                            <p class="card-text small text-muted">
+                                A dynamic blog platform featuring full authentication, profile management, CRUD operations, and role-based authorization. Built using **Node.js/Express** and **MongoDB**.
+                            </p>
+                            <p class="card-text small fw-bolder text-primary mt-3">
+                                Technology Used: EJS, Node.js, Express.js, MongoDB.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                            <a class="btn btn-primary btn-sm me-2 mb-2" href="https://github.com/SakiBee/TextTalk--Blog-Website" target="_blank">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                            </a>
+                            <a class="btn btn-outline-dark btn-sm mb-2" href="https://github.com/SakiBee/TextTalk--Blog-Website" target="_blank">
+                                <i class="bi bi-github me-1"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5: Income Expenses Tracker -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <img th:src="@{https://dummyimage.com/600x400/6f42c1/ffffff&text=Finances}"
+                             class="card-img-top" alt="Tracker Project Image" style="object-fit: cover; height: 180px;">
+                        <div class="card-body p-4">
+                            <h2 class="h5 fw-bolder">Income Expenses Tracker (MERN Stack)</h2>
+                            <p class="card-text small text-muted">
+                                A full-stack personal finance manager. Users can categorize, track, and visualize income and expenses using the **MERN stack (React, Node, Express, MongoDB)** with JWT authentication.
+                            </p>
+                            <p class="card-text small fw-bolder text-primary mt-3">
+                                Technology Used: React.js, Tailwind CSS, Node.js, Express.js, MongoDB.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pt-0 pb-4 px-4">
+                            <a class="btn btn-primary btn-sm me-2 mb-2" href="https://github.com/SakiBee/Income-Expense-Tracker" target="_blank">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                            </a>
+                            <a class="btn btn-outline-dark btn-sm mb-2" href="https://github.com/SakiBee/Income-Expense-Tracker" target="_blank">
+                                <i class="bi bi-github me-1"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to action section-->
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">Contact me</a>
             </div>
         </div>
     </section>
