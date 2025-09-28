@@ -41,6 +41,7 @@ body {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -87,4 +88,8 @@ body {
 /* --- Resume Styling --- */
 .text-primary {
     color: var(--bs-primary) !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
