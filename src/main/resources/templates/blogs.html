@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<section class="py-5" th:fragment="blogs">
+    <div class="container px-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">My Blogs</span></h1>
+            <p class="lead fw-normal text-muted mb-0">Insights and tutorials published on Medium.</p>
+        </div>
+
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-10">
+
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="p-3 me-4">
+                                <i class="bi bi-medium fs-1 text-secondary"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h3 class="fw-bolder">The Power of Thymeleaf: Dynamic Fragments in Spring Boot</h3>
+                                <p class="text-muted mb-2">
+                                    A deep dive into server-side templating, showing how to build highly maintainable applications using Thymeleaf's fragment inclusion.
+                                </p>
+                                <span class="small text-muted">Published: March 1, 2025</span>
+                                <a class="stretched-link fw-bolder text-primary float-end"
+                                   href="YOUR_MEDIUM_BLOG_URL_1" target="_blank">
+                                    Read on Medium <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="p-3 me-4">
+                                <i class="bi bi-medium fs-1 text-secondary"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h3 class="fw-bolder">Mastering SOLID Principles in Java</h3>
+                                <p class="text-muted mb-2">
+                                    Practical examples of how to apply the SOLID design principles to write clean, extensible Java code, essential for Spring Boot development.
+                                </p>
+                                <span class="small text-muted">Published: February 15, 2025</span>
+                                <a class="stretched-link fw-bolder text-primary float-end"
+                                   href="YOUR_MEDIUM_BLOG_URL_2" target="_blank">
+                                    Read on Medium <i class="bi bi-arrow-right-short"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a class="btn btn-outline-primary btn-lg" href="YOUR_MEDIUM_PROFILE_URL" target="_blank">
+                        View All Articles on Medium
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
